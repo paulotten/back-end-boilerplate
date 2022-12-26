@@ -11,3 +11,7 @@ juniper_warp = "0.7"
 shrinkwraprs = "0.3.0"
 tokio = { version = "1", features = ["full"] }
 warp = "0.3"
+base64 = "0.20"
+uuid = { version = "1.2.2", features = ["v4"] }
+chrono = "0.4.23"
+sqlx = { version = "0.6.2", default-features = false, features = ["runtime-tokio-native-tls" , "postgres", "macros", "offline", "chrono", "migrate", "uuid"] }
