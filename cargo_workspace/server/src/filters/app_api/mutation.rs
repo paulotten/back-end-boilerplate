@@ -19,7 +19,7 @@ impl Mutation {
 
         // generate timestamp
         let now = Utc::now();
-        let timestamp = now.timestamp_micros();
+        let timestamp = now.timestamp_millis();
 
         // save to database
         let mut pool = context.0.conn().await.unwrap();
